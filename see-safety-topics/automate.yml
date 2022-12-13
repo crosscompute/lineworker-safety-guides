@@ -36,11 +36,11 @@ input:
       path: environment.txt
       configuration:
         options:
-           - value: pole
-           - value: vault
-           - value: manhole
-           - value: substation
-           - value: underground
+           - value: Pole
+           - value: Vault
+           - value: Manhole
+           - value: Substation
+           - value: Underground
     - id: equipment
       view: checkbox
       path: equipment.txt
@@ -56,21 +56,20 @@ input:
       path: weather.txt
       configuration:
         options:
-           - value: hot
-           - value: cold
-           - value: rain
-           - value: snow
-           - value: ice
+           - value: Hot
+           - value: Cold
+           - value: Windy
+           - value: Rainy
+           - value: Stormy
+           - value: Snowy
+           - value: Icy
   templates:
     - path: form.md
 output:
   variables:
     - id: topics
-      view: checkbox
-      path: topics.txt
-      configuration:
-        path: topics.json
-      mode: input
+      view: markdown
+      path: topics.md
 batches:
   - folder: batches/standard
 scripts:

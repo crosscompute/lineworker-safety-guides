@@ -1,27 +1,31 @@
-import json
 from os import getenv
 from pathlib import Path
 
 
-NAME_LENGTH = 32
+from invisibleroads_macros_text import format_slug
+
+
+def get_lines(path):
+    try:
+        lines = path.read_text().splitlines()
+    except OSError:
+        lines = []
+    return lines
 
 
 input_folder = Path(getenv(
     'CROSSCOMPUTE_INPUT_FOLDER', 'batches/standard/input'))
 output_folder = Path(getenv(
     'CROSSCOMPUTE_OUTPUT_FOLDER', 'batches/standard/output'))
+datasets_folder = Path('datasets')
 
 
-task = (input_folder / 'task.txt').read_text().splitlines()
-environment = (input_folder / 'environment.txt').read_text().splitlines()
-equipment = (input_folder / 'equipment.txt').read_text().splitlines()
-weather = (input_folder / 'weather.txt').read_text().splitlines()
-
-
-options = []
-if 'hot' in weather:
-    options.append({'value': 'stay hydrated'})
-with (output_folder / 'topics.json').open('wt') as f:
-    json.dump({'options': options}, f)
-with (output_folder / 'topics.txt').open('wt') as f:
-    f.write('')
+topics = []
+for section in ['task', 'environment', 'equipment', 'weather']:
+    path = input_folder / f'{section}.txt'
+    for subsection in get_lines(path):
+        path = datasets_folder / section / f'{format_slug(subsection)}.txt'
+        for topic in get_lines(path):
+            topics.append(topic)
+with (output_folder / 'topics.md').open('wt') as f:
+    f.write('\n'.join('- ' + _ for _ in topics))
