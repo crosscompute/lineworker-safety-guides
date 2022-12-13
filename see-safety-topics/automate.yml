@@ -68,8 +68,11 @@ input:
 output:
   variables:
     - id: topics
-      view: markdown
-      path: topics.md
+      view: checkbox
+      path: topics.txt
+      configuration:
+        path: topics.json
+      mode: input
   templates:
     - path: output.md
 batches:

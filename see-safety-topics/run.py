@@ -1,3 +1,4 @@
+import json
 from os import getenv
 from pathlib import Path
 
@@ -27,5 +28,7 @@ for section in ['task', 'environment', 'equipment', 'weather']:
         path = datasets_folder / section / f'{format_slug(subsection)}.txt'
         for topic in get_lines(path):
             topics.append(topic)
-with (output_folder / 'topics.md').open('wt') as f:
-    f.write('\n'.join('- ' + _ for _ in topics))
+with (output_folder / 'topics.json').open('wt') as f:
+    json.dump({'options': [{'value': _ for _ in topics}]}, f)
+with (output_folder / 'topics.txt').open('wt') as f:
+    f.write('')
