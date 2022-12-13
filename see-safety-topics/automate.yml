@@ -1,6 +1,6 @@
 ---
 crosscompute: 0.9.3
-name: See Safety Topics
+name: See Lineworker Safety Topics
 version: 0.0.1
 input:
   variables:
@@ -64,12 +64,14 @@ input:
            - value: Snowy
            - value: Icy
   templates:
-    - path: form.md
+    - path: input.md
 output:
   variables:
     - id: topics
       view: markdown
       path: topics.md
+  templates:
+    - path: output.md
 batches:
   - folder: batches/standard
 scripts:
