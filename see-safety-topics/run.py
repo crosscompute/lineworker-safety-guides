@@ -2,7 +2,6 @@ import json
 from os import getenv
 from pathlib import Path
 
-
 from invisibleroads_macros_text import format_slug
 
 
@@ -29,6 +28,6 @@ for section in ['task', 'environment', 'equipment', 'weather']:
         for topic in get_lines(path):
             topics.append(topic)
 with (output_folder / 'topics.json').open('wt') as f:
-    json.dump({'options': [{'value': _ for _ in topics}]}, f)
+    json.dump({'options': [{'value': _} for _ in topics]}, f)
 with (output_folder / 'topics.txt').open('wt') as f:
     f.write('')
