@@ -1,0 +1,3 @@
+# Safety Logs
+
+{ outline }

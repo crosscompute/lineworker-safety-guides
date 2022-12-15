@@ -1,0 +1,31 @@
+---
+crosscompute: 0.9.3
+name: See Lineworker Safety Logs
+version: 0.0.1
+output:
+  variables:
+    - id: outline
+      view: markdown
+      path: outline.md
+      configuration:
+        label: Topics Covered by Briefing Date
+  templates:
+    - path: output.md
+batches:
+  - folder: batches/standard
+datasets:
+  - folder: datasets/jobs
+    reference:
+      folder: ../make-safety-checklist/runs
+  - folder: datasets/briefings
+    reference:
+      folder: ../log-safety-briefing/runs
+scripts:
+  - path: run.py
+environment:
+  interval: 10 seconds
+display:
+  pages:
+    - id: automation
+      configuration:
+        design: output

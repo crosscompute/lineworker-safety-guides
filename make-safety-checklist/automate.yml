@@ -1,6 +1,6 @@
 ---
 crosscompute: 0.9.3
-name: See Lineworker Safety Topics
+name: Make Lineworker Safety Checklist
 version: 0.0.1
 input:
   variables:
