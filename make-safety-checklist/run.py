@@ -39,6 +39,6 @@ with (output_folder / 'variables.dictionary').open('wt') as f:
 
 
 run_id = output_folder.name
-data = f'http://3.89.75.36:7010/a/make-safety-checklist/r/{run_id}/o'
+data = f'http://3.89.75.36:7010/a/make-lineworker-safety-checklist/r/{run_id}/o'
 img = qrcode.make(data)
 img.save(output_folder / 'qr.png')
