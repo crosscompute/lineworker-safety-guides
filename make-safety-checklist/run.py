@@ -2,6 +2,7 @@ import json
 from os import getenv
 from pathlib import Path
 
+import qrcode
 from invisibleroads_macros_text import format_slug
 
 
@@ -31,3 +32,13 @@ with (output_folder / 'topics.json').open('wt') as f:
     json.dump({'options': [{'value': _} for _ in topics]}, f)
 with (output_folder / 'topics.txt').open('wt') as f:
     f.write('')
+
+
+with (output_folder / 'variables.dictionary').open('wt') as f:
+    json.dump({'name': ''}, f)
+
+
+run_id = output_folder.name
+data = f'http://3.89.75.36:7010/a/make-safety-checklist/r/{run_id}/o'
+img = qrcode.make(data)
+img.save(output_folder / 'qr.png')

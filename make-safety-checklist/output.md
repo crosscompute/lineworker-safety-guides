@@ -1,8 +1,12 @@
-# Recommended Lineworker Safety Topics
+# Recommended Lineworker Safety Checklist
 
-Based on the work you described, here is the list of recommended topics to discuss at your safety briefing.
+{qr}
+
+Based on the work you described, here is the recommended safety checklist. Mark the checkboxes and click Run to submit.
 
 {topics}
+
+{name}
 
 <button id="_run" type="button">Run</button>
 
