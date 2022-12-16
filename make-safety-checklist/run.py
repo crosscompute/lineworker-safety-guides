@@ -38,7 +38,7 @@ with (output_folder / 'variables.dictionary').open('wt') as f:
     json.dump({'name': ''}, f)
 
 
-run_id = output_folder.name
+run_id = output_folder.parent.name
 data = f'http://3.89.75.36:7010/a/make-lineworker-safety-checklist/r/{run_id}/o'
 img = qrcode.make(data)
 img.save(output_folder / 'qr.png')
