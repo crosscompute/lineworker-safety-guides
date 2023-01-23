@@ -20,59 +20,59 @@ input:
       configuration:
         options:
            - value: Trim trees around power lines
-           - value: Install high-voltage connector
-           - value: Replace high-voltage connector
-           - value: Remove high-voltage connector
-           - value: Install transformer
-           - value: Replace transformer
-           - value: Remove transformer
-           - value: Install switch
-           - value: Replace switch
-           - value: Remove switch
-           - value: Install pole
-           - value: Replace pole
-           - value: Remove pole
-           - value: Install overhead line
-           - value: Replace overhead line
-           - value: Remove overhead line
-           - value: Install underground cable
-           - value: Replace underground cable
-           - value: Remove underground cable
-           - value: Build substation
-           - value: Repair substation
-           - value: Demolish substation
-    - id: environment
-      view: checkbox
-      path: environment.txt
-      configuration:
-        options:
-           - value: Pole
-           - value: Vault
-           - value: Manhole
-           - value: Substation
-           - value: Underground
-    - id: equipment
-      view: checkbox
-      path: equipment.txt
-      configuration:
-        options:
-           - value: Boom truck
-           - value: Bucket truck
-           - value: Hydraulic compression pump
-           - value: Chain saw
-           - value: Jackhammer
+#          - value: Install high-voltage connector
+#          - value: Replace high-voltage connector
+#          - value: Remove high-voltage connector
+#          - value: Install transformer
+#          - value: Replace transformer
+#          - value: Remove transformer
+#          - value: Install switch
+#          - value: Replace switch
+#          - value: Remove switch
+#          - value: Install pole
+#          - value: Replace pole
+#          - value: Remove pole
+#          - value: Install overhead line
+#          - value: Replace overhead line
+#          - value: Remove overhead line
+#          - value: Install underground cable
+#          - value: Replace underground cable
+#          - value: Remove underground cable
+#          - value: Build substation
+#          - value: Repair substation
+#          - value: Demolish substation
+#   - id: environment
+#     view: checkbox
+#     path: environment.txt
+#     configuration:
+#       options:
+#          - value: Pole
+#          - value: Vault
+#          - value: Manhole
+#          - value: Substation
+#          - value: Underground
+#   - id: equipment
+#     view: checkbox
+#     path: equipment.txt
+#     configuration:
+#       options:
+#          - value: Boom truck
+#          - value: Bucket truck
+#          - value: Hydraulic compression pump
+#          - value: Chain saw
+#          - value: Jackhammer
     - id: weather
       view: checkbox
       path: weather.txt
       configuration:
         options:
            - value: Hot
-           - value: Cold
-           - value: Windy
-           - value: Rainy
-           - value: Stormy
-           - value: Snowy
-           - value: Icy
+#          - value: Cold
+#          - value: Windy
+#          - value: Rainy
+#          - value: Stormy
+#          - value: Snowy
+#          - value: Icy
   templates:
     - path: input.md
 output:

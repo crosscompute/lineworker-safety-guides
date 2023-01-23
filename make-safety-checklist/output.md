@@ -1,14 +1,15 @@
 # Recommended Lineworker Safety Checklist
 
-{qr}
+1. Scan the barcode to open this safety checklist on your phone.
+2. Review and submit the checklist.
 
-Based on the work you described, here is the recommended safety checklist. Mark the checkboxes and click Run to submit.
+{qr}
 
 {topics}
 
 {name}
 
-<button id="_run" type="button">Run</button>
+<button id="_run" type="button">Submit</button>
 
 <script>
 document.getElementById('_run').onclick = async () => {

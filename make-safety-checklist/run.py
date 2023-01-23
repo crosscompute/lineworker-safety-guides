@@ -18,6 +18,7 @@ input_folder = Path(getenv(
     'CROSSCOMPUTE_INPUT_FOLDER', 'batches/standard/input'))
 output_folder = Path(getenv(
     'CROSSCOMPUTE_OUTPUT_FOLDER', 'batches/standard/output'))
+origin_uri = getenv('CROSSCOMPUTE_ORIGIN_URI', '')
 datasets_folder = Path('datasets')
 
 
@@ -39,6 +40,6 @@ with (output_folder / 'variables.dictionary').open('wt') as f:
 
 
 run_id = output_folder.parent.name
-data = f'http://3.89.75.36:7010/a/make-lineworker-safety-checklist/r/{run_id}/o'
+data = f'{origin_uri}/a/make-lineworker-safety-checklist/r/{run_id}/o'
 img = qrcode.make(data)
 img.save(output_folder / 'qr.png')
