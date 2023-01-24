@@ -92,6 +92,7 @@ output:
       view: checkbox
       path: topics.txt
       configuration:
+        label: Safety Topics
         path: topics.json
       mode: input
   templates:
