@@ -4,9 +4,7 @@
 2. Click Run to see a safety checklist of topics to discuss at your safety briefing.
 3. Ask workers to scan the QR code to review and submit the safety checklist.
 
-{work_description}
-
-{worker_count}
+[//]: # ( {work_description} )
 
 {task}
 
@@ -15,3 +13,5 @@
 [//]: # ( {equipment} )
 
 {weather}
+
+{worker_count}

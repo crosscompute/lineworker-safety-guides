@@ -1,5 +1,5 @@
-Check the voltages of nearby lines before work begins.
-Assume all lines have the voltage of the line with the highest voltage.
-Ensure body parts and any ladders, platforms, aerial devices remain outside the minimum approach distance from energized parts.
-Use only insulated equipment to remove branches that are within the minimum approach distance of energized parts.
-Check that a second tree trimmer is within voice range of the first tree trimmer.
+Check the voltages of nearby lines before work begins
+Assume all lines have the voltage of the line with the highest voltage
+Ensure body parts and any ladders, platforms, aerial devices remain outside the minimum approach distance from energized parts
+Use only insulated equipment to remove branches that are within the minimum approach distance of energized parts
+Check that a second tree trimmer is within voice range of the first tree trimmer

@@ -4,11 +4,11 @@ name: Make Lineworker Safety Checklist
 version: 0.0.1
 input:
   variables:
-    - id: work_description
-      view: text
-      path: variables.dictionary
-      configuration:
-        label: What will your team be doing today?
+#   - id: work_description
+#     view: text
+#     path: variables.dictionary
+#     configuration:
+#       label: What will your team be doing today?
     - id: worker_count
       view: number
       path: variables.dictionary
@@ -86,6 +86,8 @@ output:
       view: string
       path: variables.dictionary
       mode: input
+      configuration:
+        label: Worker Name
     - id: topics
       view: checkbox
       path: topics.txt
