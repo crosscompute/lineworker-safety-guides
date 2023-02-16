@@ -40,6 +40,6 @@ with (output_folder / 'variables.dictionary').open('wt') as f:
 
 
 run_id = output_folder.parent.name
-data = f'{origin_uri}/a/make-lineworker-safety-checklist/r/{run_id}/o'
+data = f'{origin_uri}/a/make-lineworker-safety-checklist/b/{run_id}/o'
 img = qrcode.make(data)
 img.save(output_folder / 'qr.png')
