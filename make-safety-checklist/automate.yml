@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: Make Lineworker Safety Checklist
 version: 0.0.1
 input:
@@ -7,13 +7,11 @@ input:
 #   - id: work_description
 #     view: text
 #     path: variables.dictionary
-#     configuration:
-#       label: What will your team be doing today?
+#     label: What will your team be doing today?
     - id: worker_count
       view: number
       path: variables.dictionary
-      configuration:
-        label: How many workers will be on site?
+      label: How many workers will be on site?
     - id: task
       view: checkbox
       path: task.txt
@@ -80,19 +78,17 @@ output:
     - id: qr
       view: image
       path: qr.png
-      configuration:
-        label: Here is the link to this form.
+      label: "Scan the barcode to open this form on your phone:"
     - id: name
       view: string
       path: variables.dictionary
       mode: input
-      configuration:
-        label: Worker Name
+      label: Worker Name
     - id: topics
       view: checkbox
       path: topics.txt
+      label: Safety Topics
       configuration:
-        label: Safety Topics
         path: topics.json
       mode: input
   templates:

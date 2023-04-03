@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 imports:
   - path: make-safety-checklist/automate.yml
   - path: log-safety-briefing/automate.yml

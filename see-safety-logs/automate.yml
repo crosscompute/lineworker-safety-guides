@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: See Lineworker Safety Logs
 version: 0.0.1
 output:
@@ -7,8 +7,7 @@ output:
     - id: outline
       view: markdown
       path: outline.md
-      configuration:
-        label: Topics Covered by Briefing Date
+      label: Topics Covered by Briefing Date
   templates:
     - path: output.md
 batches:
