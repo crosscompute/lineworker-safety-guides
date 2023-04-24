@@ -9,10 +9,10 @@
 
 {name}
 
-<button id="_run" type="button">Submit</button>
+{ BUTTON_PANEL }
 
 <script>
-document.getElementById('_run').onclick = async () => {
+document.querySelector('._continue').onclick = async () => {
   const uri = '{ ROOT_URI }/a/log-lineworker-safety-briefing';
   const d = await post(uri + '.json', getDataById());
   redirect(uri, d);
