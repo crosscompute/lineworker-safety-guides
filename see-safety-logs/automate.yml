@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: See Lineworker Safety Logs
+description: See checklists submitted by participants of lineworker safety briefings
 version: 0.0.1
 output:
   variables:

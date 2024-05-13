@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: Log Lineworker Safety Briefing
+description: Submit a checklist after a lineworker safety briefing
 version: 0.0.1
 input:
   variables:

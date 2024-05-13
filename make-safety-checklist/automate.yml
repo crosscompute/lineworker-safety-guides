@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: Make Lineworker Safety Checklist
+description: Make a checklist to be filled by participants after a lineworker safety briefing
 version: 0.0.1
 input:
   variables:
