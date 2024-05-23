@@ -1,0 +1,6 @@
+---
+crosscompute: 0.9.4
+imports:
+  - path: make-safety-checklist/automate.yaml
+  - path: log-safety-briefing/automate.yaml
+  - path: see-safety-logs/automate.yaml

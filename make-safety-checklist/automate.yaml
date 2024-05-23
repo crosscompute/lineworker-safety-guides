@@ -98,6 +98,10 @@ batches:
   - folder: batches/standard
 scripts:
   - path: run.py
+environment:
+  packages:
+    - id: qrcode[pil]
+      manager: pip
 display:
   styles:
     - path: style.css
