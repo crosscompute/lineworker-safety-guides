@@ -15,9 +15,9 @@ def get_lines(path):
 
 
 input_folder = Path(getenv(
-    'CROSSCOMPUTE_INPUT_FOLDER', 'batches/standard/input'))
+    'INPUT_FOLDER', 'presets/standard/input'))
 output_folder = Path(getenv(
-    'CROSSCOMPUTE_OUTPUT_FOLDER', 'batches/standard/output'))
+    'OUTPUT_FOLDER', 'presets/standard/output'))
 origin_uri = getenv('CROSSCOMPUTE_ORIGIN_URI', '')
 datasets_folder = Path('datasets')
 

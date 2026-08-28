@@ -12,9 +12,9 @@ def get_lines(path):
 
 
 input_folder = Path(getenv(
-    'CROSSCOMPUTE_INPUT_FOLDER', 'batches/standard/input'))
+    'INPUT_FOLDER', 'presets/standard/input'))
 output_folder = Path(getenv(
-    'CROSSCOMPUTE_OUTPUT_FOLDER', 'batches/standard/output'))
+    'OUTPUT_FOLDER', 'presets/standard/output'))
 datasets_folder = Path('datasets')
 jobs_folder = datasets_folder / 'jobs'
 briefings_folder = datasets_folder / 'briefings'

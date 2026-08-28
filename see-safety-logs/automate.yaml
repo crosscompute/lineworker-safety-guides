@@ -11,8 +11,8 @@ output:
       label: Topics Covered by Briefing Date
   templates:
     - path: output.md
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 datasets:
   - folder: datasets/jobs
     reference:
